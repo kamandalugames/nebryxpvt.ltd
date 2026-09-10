@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KANTA KAMANDALU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-container">
+    <canvas id="gameCanvas"></canvas>
+
+    <section id="startScreen" class="screen">
+      <h1>KANTA KAMANDALU</h1>
+      <p>DON'T HIT HER 😭</p>
+      <button id="startButton">START GAME</button>
+      <small>SPACE • CLICK • TAP</small>
+    </section>
+
+    <section id="gameOverScreen" class="screen hidden">
+      <h1>GAME OVER 💀</h1>
+      <p>Score: <strong id="finalScore">0</strong></p>
+      <p>Best: <strong id="finalBest">0</strong></p>
+      <button id="restartButton">PLAY AGAIN</button>
+    </section>
+
+    <div id="scoreBoard">0</div>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

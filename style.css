@@ -1,0 +1,32 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; }
+body {
+  display: flex; justify-content: center; align-items: center;
+  background: #111; font-family: Arial, Helvetica, sans-serif;
+}
+.game-container {
+  position: relative; width: 100vw; height: 100vh; max-width: 520px;
+  overflow: hidden; background: #8ed8ff;
+}
+canvas { display: block; width: 100%; height: 100%; }
+#scoreBoard {
+  position: absolute; top: 20px; left: 0; width: 100%; text-align: center;
+  color: white; font-size: 58px; font-weight: 900; pointer-events: none;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000;
+}
+.screen {
+  position: absolute; inset: 0; z-index: 10; display: flex;
+  flex-direction: column; justify-content: center; align-items: center;
+  gap: 14px; padding: 25px; text-align: center; color: white;
+  background: rgba(0,0,0,.58);
+}
+.screen h1 { font-size: clamp(30px, 9vw, 48px); text-shadow: 3px 3px #000; }
+.screen p { font-size: 22px; font-weight: 700; }
+.screen small { margin-top: 8px; opacity: .85; font-size: 14px; }
+button {
+  border: 0; border-radius: 12px; padding: 15px 30px; cursor: pointer;
+  background: #ffd21a; color: #111; font-size: 20px; font-weight: 900;
+  box-shadow: 0 6px 0 #a77f00;
+}
+button:active { transform: translateY(5px); box-shadow: 0 1px 0 #a77f00; }
+.hidden { display: none; }
